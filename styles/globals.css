@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 html,
 body {
   padding: 0;
@@ -11,6 +16,166 @@ a {
   text-decoration: none;
 }
 
-* {
+*{
   box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #DCD0F5; 
+  border-radius: 5px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #250F55; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:#4A15BA;
+}
+
+/******************************** Hero Section *********************************************/
+
+.hero{
+  display: flex;
+  flex-direction: row;
+  padding: 80px;
+
+}
+
+.hero-image-div{
+  margin-left: 250px;
+}
+
+.hero-text{
+  margin-left: 60px;
+}
+
+.hero-text h1{
+  font-size: 70px;
+  font-weight: bold;
+  color: #250F55;
+}
+
+.hero-text p{
+  font-size: 30px;
+  color: #4A15BA;
+}
+
+.signup-btn{
+  background-color: #250F55; 
+  border-radius: 40px;
+  font-size: 25px;
+  color:#FFFFFF ;
+  text-align:center; 
+  font-weight:bold;
+  text-decoration: none;
+  padding: 15px 40px;
+  cursor: pointer;
+}
+
+
+.signup-btn:hover{
+  background-color: #B9A1D6;
+  color: #250F55;
+}
+
+.heroImg{
+  width: 500px;
+}
+
+@media screen and (max-width: 720px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .heroImg{
+    width: 400px;
+  }
+
+  .hero-text{
+    width: 200%;
+    margin-top: 20px;
+    margin-left: 180px;
+    text-align: center;
+  }
+}
+
+/************************************** About Us ************************************************/
+
+
+.about{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  padding: 80px;
+}
+
+.about-image-div{
+  margin-left: 60px;
+}
+
+.about-text{
+  margin-left: 250px;
+}
+
+.about-text h1{
+  /* font-size: 70px;
+  font-weight: bold; */
+  color: #250F55;
+}
+
+.about-text p{
+  font-size: 30px;
+  color: #4A15BA;
+}
+
+
+.aboutImg{
+  /* width: 500px; */
+}
+
+@media screen and (max-width: 720px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutImg{
+    width: 400px;
+    margin-left: 15%;
+  }
+
+  .about-text{
+    width: 200%;
+    margin-top: 30px;
+    margin-left: 180px;
+    text-align: center;
+  }
+}
+
+/************************************** SignIn ************************************************/
+
+.leftdiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0px;
+  margin-top: -72px;
+  height: 100%;
+}
+
+.fields{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }

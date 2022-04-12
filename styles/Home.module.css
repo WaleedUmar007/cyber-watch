@@ -114,3 +114,39 @@
     flex-direction: column;
   }
 }
+
+/****************************************** Footer Section ********************************************/
+
+
+.footer{
+  position: static;
+  background-color: #250F55;
+  height: 230px;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color:#FFFFFF;
+    font-size: 20px;
+}
+
+.footer-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+/* @media screen and (max-width: 720px) {
+
+  .footer{
+    width: 150%;
+  } */
+
+
